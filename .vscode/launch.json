@@ -8,7 +8,7 @@
             "protocol": "inspector",
             "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron",
             "runtimeArgs": [
-                "--remote-debugging-port=9222",
+                "--remote-debugging-port=9223",
                 "."
             ],
             "windows": {
@@ -19,7 +19,9 @@
             "name": "Electron: Renderer",
             "type": "chrome",
             "request": "attach",
-            "port": 9222
+            "port": 9223,
+            "webRoot": "${workspaceRoot}",
+            "timeout": 30000
         }
     ],
     "compounds": [
